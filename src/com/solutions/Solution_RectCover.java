@@ -1,4 +1,4 @@
-package com;
+package com.solutions;
 
 /**
  * Created by liec on 17-2-9.

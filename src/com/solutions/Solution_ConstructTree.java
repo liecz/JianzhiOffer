@@ -1,4 +1,6 @@
-package com;
+package com.solutions;
+
+import com.util.TreeNode;
 
 import java.util.HashMap;
 

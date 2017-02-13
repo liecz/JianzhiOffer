@@ -1,13 +1,13 @@
-package com;
+package com.util;
 
 /**
  * Created by liec on 17-2-9.
  */
 public class ListNode {
-    int val;
-    ListNode next = null;
+    public int val;
+    public ListNode next = null;
 
-    ListNode(int val) {
+    public ListNode(int val) {
         this.val = val;
     }
 
@@ -25,8 +25,4 @@ public class ListNode {
         pre.next = null;
         return lns[0];
     }
-}
-
-interface ILink {
-    public int getValue(int pos);
 }

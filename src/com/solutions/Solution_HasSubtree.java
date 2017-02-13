@@ -1,4 +1,6 @@
-package com;
+package com.solutions;
+
+import com.util.TreeNode;
 
 /**
  * Created by liec on 17-2-9.

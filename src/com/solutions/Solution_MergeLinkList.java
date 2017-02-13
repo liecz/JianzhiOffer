@@ -1,4 +1,7 @@
-package com;
+package com.solutions;
+
+import com.util.ILink;
+import com.util.ListNode;
 
 /**
  * Created by liec on 17-2-9.
@@ -39,18 +42,8 @@ public class Solution_MergeLinkList {
 
     public static void main(String[] args) {
 
-        ListNode a = ListNode.generateLinkList(3, new ILink() {
-            @Override
-            public int getValue(int pos) {
-                return pos * 2;
-            }
-        });
-        ListNode b = ListNode.generateLinkList(3, new ILink() {
-            @Override
-            public int getValue(int pos) {
-                return pos * 2 + 1;
-            }
-        });
+        ListNode a = ListNode.generateLinkList(3, pos->pos*2);
+        ListNode b = ListNode.generateLinkList(3, pos -> pos * 2 + 1);
         Solution_MergeLinkList s = new Solution_MergeLinkList();
         ListNode z = s.Merge(a, b);
     }
