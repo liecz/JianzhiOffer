@@ -20,6 +20,10 @@ public class Solution_LeftRotateString {
     * 套入公式得s'=defabc即最终结果
     * */
     public String LeftRotateString(String str, int n) {
+        if (str == null || str.length() == 0 || n > str.length())
+            return new String("");
+        if (n == str.length())
+            return str;
         char[] chars = str.toCharArray();
         reverse(chars, 0, n - 1);
         reverse(chars, n, chars.length - 1);
