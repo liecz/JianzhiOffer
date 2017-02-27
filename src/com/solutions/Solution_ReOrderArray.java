@@ -5,6 +5,13 @@ package com.solutions;
  */
 public class Solution_ReOrderArray {
 
+    public static void main(String[] args) {
+        Solution_ReOrderArray s = new Solution_ReOrderArray();
+        int[] a = new int[]{1, 2, 3, 4, 5, 6, 7};
+        s.reOrderArray(a);
+        System.out.println(a);
+    }
+
     public void reOrderArray(int[] array) {
         int i = -1, j = 0, size = array.length;
         while (j < size) {
@@ -20,12 +27,5 @@ public class Solution_ReOrderArray {
             }
             j++;
         }
-    }
-
-    public static void main(String[] args) {
-        Solution_ReOrderArray s = new Solution_ReOrderArray();
-        int[] a = new int[]{1, 2, 3, 4, 5, 6, 7};
-        s.reOrderArray(a);
-        System.gc();
     }
 }

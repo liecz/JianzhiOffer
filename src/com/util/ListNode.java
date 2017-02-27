@@ -25,4 +25,12 @@ public class ListNode {
         pre.next = null;
         return lns[0];
     }
+
+    @Override
+    public String toString() {
+        return "ListNode{" +
+                "val=" + val +
+                ", next=" + (this.next == null ? "null" : next.toString()) +
+                '}';
+    }
 }
