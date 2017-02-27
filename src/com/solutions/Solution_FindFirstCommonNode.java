@@ -8,8 +8,8 @@ import com.util.ListNode;
  */
 public class Solution_FindFirstCommonNode {
     /*
-    * p1p2指向2个链表的头，p1,p2同时向前走，若p1p2某个制作变为null则从另一个链表的
-    * 头开始走，当第二次遇到null时，先走的p已经正好赶上遇到null的制作的下一个节点（链表表头）
+    * p1p2指向2个链表的头，p1,p2同时向前走，若p1p2某个指针变为null则从另一个链表的
+    * 头开始走，当第二次遇到null时，先走的p已经正好赶上遇到null的指针的下一个节点（链表表头）
     * */
     public ListNode FindFirstCommonNode(ListNode pHead1, ListNode pHead2) {
         ListNode p1 = pHead1, p2 = pHead2;
