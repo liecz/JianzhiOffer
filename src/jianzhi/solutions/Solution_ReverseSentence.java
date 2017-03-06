@@ -21,7 +21,7 @@ public class Solution_ReverseSentence {
     * */
     public String ReverseSentence(String str) {
         if (str == null || str.length() == 0)
-            return new String("");
+            return "";
         char[] chars = str.toCharArray();
         int lastPos = 0;
         for (int i = 0; i < chars.length; i++) {
