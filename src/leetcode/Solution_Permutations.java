@@ -31,6 +31,7 @@ public class Solution_Permutations {
         int len = nums.length, i, j;
         while (true) {
             i = len - 2;
+            // 寻找比其后一个要小的元素
             while (i >= 0 && nums[i] >= nums[i + 1]) i--;
             if (i == -1) break;
             j = i + 1;
