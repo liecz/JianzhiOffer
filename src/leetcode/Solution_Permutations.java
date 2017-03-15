@@ -21,12 +21,6 @@ import java.util.List;
  * Created by liec on 2017-03-15.
  */
 public class Solution_Permutations {
-    public static void main(String[] args) {
-        Solution_Permutations s = new Solution_Permutations();
-        int[] a = {1, 2, 3};
-        List<List<Integer>> r = s.permute(a);
-        System.out.println("r = " + r);
-    }
 
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
