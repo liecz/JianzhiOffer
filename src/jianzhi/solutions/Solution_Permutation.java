@@ -13,36 +13,39 @@ import java.util.Arrays;
 public class Solution_Permutation {
     public ArrayList<String> Permutation(String str) {
         ArrayList<String> result = new ArrayList<>();
-        if(str!=null&&str.length()>0){
+        if (str != null && str.length() > 0) {
             char[] seq = str.toCharArray();
             Arrays.sort(seq);
             result.add(String.valueOf(seq));
             int len = seq.length;
-            while (true){
+            while (true) {
                 int i = len - 2;
-                while(i>=0&&seq[i] >= seq[i+1]) i--;
-                if(i==-1) break;
-                if(i>=0){
-                    int j = i+1;
-                    while(j<len&&seq[i] < seq[j]) j++;
-                    swap(seq,i,j-1);
+                while (i >= 0 && seq[i] >= seq[i + 1]) i--;
+                if (i == -1) break;
+                if (i >= 0) {
+                    int j = i + 1;
+                    while (j < len && seq[i] < seq[j]) j++;
+                    swap(seq, i, j - 1);
                 }
-                reverse(seq,i+1);
+                reverse(seq, i + 1);
                 result.add(String.valueOf(seq));
             }
         }
         return result;
     }
-    private void swap(char[] seq,int i,int j){
+
+    private void swap(char[] seq, int i, int j) {
         char t = seq[i];
         seq[i] = seq[j];
         seq[j] = t;
     }
-    private void reverse(char[] seq,int i){
+
+    private void reverse(char[] seq, int i) {
         int j = seq.length - 1;
-        while(i<j){
-            swap(seq,i,j);
-            i++;j--;
+        while (i < j) {
+            swap(seq, i, j);
+            i++;
+            j--;
         }
     }
 }
