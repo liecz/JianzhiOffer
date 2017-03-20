@@ -37,6 +37,10 @@ public class Solution_GroupAnagrams {
         return lists;
     }
 
+    public List<List<String>> groupAnagrams1(String[] strs) {
+        return null;
+    }
+
     public static void main(String[] args) {
         Solution_GroupAnagrams s = new Solution_GroupAnagrams();
         String[] strs = new String[]{"eat", "tea", "tan", "ate", "nat", "bat"};
