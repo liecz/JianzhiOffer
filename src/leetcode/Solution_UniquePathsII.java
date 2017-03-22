@@ -30,7 +30,6 @@ public class Solution_UniquePathsII {
         nuts[0] = 1;
         for (int[] row : obstacleGrid) {
             for (int i = 0; i < n; i++) {
-
                 if (row[i] == 1)
                     nuts[i] = 0;
                 else if (i > 0)
