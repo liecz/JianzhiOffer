@@ -48,7 +48,7 @@ public class Solution_DeleteDuplication {
     public ListNode deleteDuplication1(ListNode pHead) {
         if (pHead == null)
             return null;
-        if (pHead != null && pHead.next == null)
+        if (pHead.next == null)
             return pHead;
         if (pHead.val == pHead.next.val) {
             ListNode c = pHead.next.next;
